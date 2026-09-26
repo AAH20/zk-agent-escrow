@@ -3,7 +3,6 @@
 > **Multi-Cloud PCI DSS 4.0 Zero-Knowledge Cardholder Privacy Enclave & Autonomous AI Agent Escrow**  
 > *Zero Plaintext PAN/CVV Exposure into LLM Contexts & Merkle Proof of Execution Budget Release*  
 > Direct Integration with **[a2zsoc.com](https://a2zsoc.com)** Evidence Vault  
-> Connected to **2,000 Workflows**: `Cluster_07 (Dispute & Chargeback)` & `Cluster_10 (Regulatory Reporting, SOX & BSA)`
 
 [![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](LICENSE)
 [![Python](https://img.shields.io/badge/Python-3.10%2B-brightgreen.svg)](https://python.org)
@@ -77,13 +76,13 @@ flowchart TD
 
 ---
 
-## 🔄 Linkage to the 2,000 Workflows Ecosystem
+## 🔄 Zero-Knowledge Cardholder Privacy & Escrow Standards Scope
 
-This standalone engine executes workflows in:
-* **[`fintech_payments_banking_1000_workflows/Cluster_07_Dispute_Chargeback_Arbitration_0601_0700`](file:///Users/ahmedhassan/Downloads/2000%20workflows/fintech_payments_banking_1000_workflows/Cluster_07_Dispute_Chargeback_Arbitration_0601_0700)**:
-  * Workflows `0601–0640`: Zero-knowledge token arbitration & fraud liability shifts.
-* **[`fintech_payments_banking_1000_workflows/Cluster_10_Regulatory_Reporting_SOX_BSA_0901_1000`](file:///Users/ahmedhassan/Downloads/2000%20workflows/fintech_payments_banking_1000_workflows/Cluster_10_Regulatory_Reporting_SOX_BSA_0901_1000)**:
-  * Workflows `0931–0970`: PCI DSS 4.0 continuous auditing, tokenization compliance, and cryptographic access control seals.
+This standalone enclave implements and enforces cryptographic zero-knowledge standards:
+* **PCI DSS 4.0 Requirements 3.4 & 3.5**: Complete isolation of PAN/CVV inside hardware enclaves, preventing plaintext prompt exposure.
+* **PCI DSS 4.0 Requirement 8.3**: Strict cryptographic authentication and ephemeral tokenization for autonomous payment agents.
+* **Cryptographic Merkle Proof of Execution**: SHA-256 verifiable compute certificates for sub-0.01ms budget unlock.
+* **SOC 2 Type II CC6.1 & CC6.6**: Boundary protection and zero-leakage attestation sealed to the a2zsoc.com Evidence Vault.
 
 ---
 
