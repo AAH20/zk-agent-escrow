@@ -56,3 +56,40 @@ class EscrowContractState:
     is_released: bool = False
     required_exit_code: int = 0
     released_at: Optional[float] = None
+
+
+@dataclass
+class ZkCardholderToken:
+    token_id: str
+    masked_pan: str
+    enclave_commitment_hash: str
+    zero_knowledge_proof_digest: str
+    authorized_amount_usd: float
+    merchant_id: str
+    agent_id: str
+    pci_dss_requirement: str = "PCI DSS 4.0 Req 3.4 / 3.5 / 8.3"
+    created_at: float = field(default_factory=time.time)
+
+
+@dataclass
+class PCIEnclaveVerificationResult:
+    is_valid: bool
+    token_id: str
+    enclave_validity: bool
+    pci_req_3_passed: bool
+    pci_req_8_passed: bool
+    unredacted_data_leaked: bool
+    audit_trail_id: str
+    reason: str
+
+
+@dataclass
+class PCIComplianceRecord:
+    record_id: str
+    token_id: str
+    masked_pan: str
+    pci_controls_validated: List[str]
+    a2zsoc_vault_seal: str
+    status: str
+    timestamp: float = field(default_factory=time.time)
+
